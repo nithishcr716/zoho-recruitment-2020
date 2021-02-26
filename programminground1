@@ -1,0 +1,28 @@
+public class Main {
+    public static void main(String[] args) {
+      // hardcoding the string here for now. We can also use scanner class to get the input from the user
+      String str="WELCOME";
+      int n=str.length();
+      int m = n + ((n/2)-1); // initialising m to run the loop n/2 -1 times to parse the characters before n/2
+      for(int i=n/2; i<=m;i++)
+      {
+        int k=0;
+        System.out.println("\n");
+        for(int j=n/2; j<=i;j++)
+        {
+          System.out.print(" ");
+          if(j<n)
+          {
+          System.out.print(str.charAt(j));
+          }
+          if(j>=n) //if index greater than string length printing the characters before n/2
+          {
+            System.out.print(str.charAt(k));
+            k++;
+          }
+        }
+      }
+        
+    }   
+    
+}
